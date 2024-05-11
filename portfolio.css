@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* main page inside the portfolio */
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, black 0%, #060b3f 100%);
+    /* background-image: radial-gradiant (black, skyblue); */
+}
+
+/* navbar of the portfolio */
+.navbar {
+    width: 100vw;
+    height: 60px;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(39, 29, 118) 0%, rgb(24, 24, 24) 99.4%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+}
+
+.Tanmoy {
+    color: aliceblue;
+    padding-left: 90px;
+    font-weight: 700;
+    transition: transform 5s ease;
+    transform: translateX(-50px);
+}
+
+.Tanmoy:hover {
+    transform: translateX(0);
+
+}
+
+
+.Tanmoy:hover {
+    background-color: transparent;
+    color: aqua;
+    font-weight: 900;
+}
+
+/* Information is the second part of the nav-bar */
+.information {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: 400;
+    font-size: medium;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+    height: 25px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* End of the nav-bar */
+.inside-doc {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row-reverse;
+
+
+}
+
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+        color: transparent;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        color: white;
+    }
+}
+
+.write {
+    color: white;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 5px;
+    padding-top: 150px;
+    padding-left: 5rem;
+    line-height: 3rem;
+    font-size: x-large;
+    letter-spacing: 0.4px;
+    animation: slideFromTop 2s ease;
+}
+
+.write:hover {
+    color: aqua;
+}
+
+@keyframes slideInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+#write1 {
+    color: rgba(209, 12, 18, 0.97);
+    font-weight: 900;
+    font-size: xx-large;
+    animation: slideInOut 3s ease-in-out infinite forwards;
+}
+
+
+.end {
+    color: white;
+    margin-top: 10rem;
+}
+
+.inside-doc img {
+    height: 200px;
+    width: 200px;
+    border-radius: 60%;
+    margin-top: 6rem;
+    margin-right: 4rem;
+    float: right;
+
+
+}
+
+/* second part of the page about section */
+.second-part {
+    background: linear-gradient(to top, black 0%, #060b3f 100%);
+
+}
+
+.inside-second-part {
+    display: flex;
+
+
+}
+
+.image2 img {
+
+    height: 200px;
+    width: 200px;
+    border-radius: 60%;
+    margin-top: 10rem;
+    margin-right: 4rem;
+    float: right;
+    mix-blend-mode: initial;
+    margin-left: 8rem;
+    background-blend-mode: screen;
+}
+
+/* text part in about section */
+.content {
+    color: white;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 6rem;
+    margin-bottom: 15em;
+}
+
+#dark {
+    color: aquamarine;
+}
+
+#red {
+    color: red;
+}
+
+
+#two {
+    letter-spacing: 0.9px;
+    line-height: 1.5rem;
+    padding-left: 1rem;
+    padding-top: 2em;
+    line-height: 2;
+}
+
+#two:hover {
+    color: aqua;
+}
+
+#three {
+    letter-spacing: 0.9px;
+    line-height: 1.5rem;
+    padding-left: 1rem;
+    padding-top: 2em;
+    line-height: 2;
+}
+
+#three:hover {
+    color: aqua;
+}
+
+#four {
+    letter-spacing: 0.9px;
+    line-height: 1.5rem;
+    padding-left: 1rem;
+    padding-top: 2em;
+    line-height: 2;
+}
+
+#four:hover {
+    color: aqua;
+}
+
+
+.course-container {
+    display: flex;
+
+}
+
+/* courses are the parts under course-container and topic you study will store here */
+.courses {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-right: 20em;
+    color: rgb(57, 145, 192);
+}
+
+.courses p {
+    padding-top: 20px;
+    color: white;
+}
+
+
+
+/* knowledge is another part where you can store the your knowledge by using stars */
+.knowledge {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    color: rgb(57, 145, 192);
+}
+
+.knowledge p {
+    color: goldenrod;
+    padding-top: 20px;
+    padding-left: 5em;
+    animation: slideIn 5s ease infinite;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Third part is the experience section */
+.third-box {
+    background: linear-gradient(to top, black 0%, #060b3f 100%);
+    color: white;
+    width: 100vw;
+    height: 800px;
+
+}
+
+/* Third-box contains another part inside-thirdbox part */
+.inside-thirdbox {
+    width: 85vw;
+    height: 100vh;
+    /* background-color: white; */
+    margin-left: 7.5rem;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+/* clr1 and clr2 are the two span colors */
+#clr1 {
+    color: orange;
+}
+
+#clr2 {
+    color: antiquewhite;
+}
+
+/* inside the third box1 the text is */
+#exp1 {
+    padding-top: 5em;
+    padding-right: 10em;
+    letter-spacing: 1.4px;
+    line-height: 3;
+    text-shadow: 1px 1px 2px rgb(233, 229, 230);
+}
+
+#exp1:hover {
+    /* font-weight: bolder; */
+    color: aqua
+}
+
+#exp2 {
+    letter-spacing: 1.4px;
+    line-height: 3;
+    padding-top: 10em;
+    text-shadow: 1px 1px 2px rgb(210, 204, 205);
+}
+
+#exp2:hover {
+    color: aqua
+}
+
+/* Image section under inside-thirdbox2 */
+.inside-thirdbox2 img {
+    width: 17em;
+    height: 130px;
+    border-radius: 30px;
+}
+
+.image3 {
+    margin-top: 6em;
+    box-shadow: 10px 5px 5px rgb(57, 145, 192);
+
+}
+
+.image4 {
+    margin-top: 13em;
+    box-shadow: 10px 5px 5px rgb(57, 145, 192);
+}
+
+/* fourth box inside the container */
+.fourth-box {
+    width: 100vw;
+    height: 200px;
+    background: linear-gradient(to top, black 0%, #060b3f 100%);
+}
+
+#contact {
+    color: white;
+    font-weight: 900;
+    font-size: xx-large;
+    padding-left: 42%;
+    padding-top: 20px;
+}
+
+.media-parts {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+
+}
+
+.fa-brands {
+    color: white;
+    padding-top: 3px;
+    padding-left: 10px;
+    /
+}
+
+.p1:hover {
+    color: aqua;
+    font-weight: 800;
+}
+
+
+#contact {
+    color: white;
+    padding-top: 5px;
+}
+
+.p1 {
+    color: white;
+    padding-top: 3px;
+    padding-left: 15rem;
+}
+
+/* main-box is the part wher contact1 and contact2 is stored */
+.main-box {
+    display: flex;
+
+}
+
+/* contact1 and contact2 are two social media distribued parts */
+.contact1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7em;
+    padding: 10px;
+
+}
+
+.contact2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 14em;
+    padding-top: 20px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#last-line {
+    color: white;
+    padding-left: 25rem;
+    padding-top: 50px;
+    letter-spacing: 0.8px;
+}
